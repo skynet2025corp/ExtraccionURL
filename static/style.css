@@ -1,0 +1,7 @@
+body { background: linear-gradient(180deg,#f8fafc,#eef2f7); }
+.card-title { color: #0d6efd; }
+#resultPre { max-height: 300px; overflow: auto; }
+#categories ul { max-height: 300px; overflow: auto; padding-left: 1rem; }
+.progress { height: 12px; }
+.card { border-radius: 12px; }
+.lead { color: #495057; }

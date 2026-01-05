@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Extractor de URLs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h1 class="card-title">Extractor de URLs</h1>
+          <p class="lead">Introduce el sitio web y la profundidad para obtener subdirecciones.</p>
+
+          <div class="mb-3">
+            <label for="urlInput" class="form-label">URL del sitio</label>
+            <input id="urlInput" class="form-control" placeholder="ejemplo.com o https://www.ejemplo.com">
+          </div>
+
+          <div class="mb-3 row">
+            <div class="col-auto">
+              <label for="depthInput" class="form-label">Profundidad</label>
+              <select id="depthInput" class="form-select">
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="col d-flex align-items-end">
+              <button id="startBtn" class="btn btn-primary ms-3">Iniciar extracción</button>
+            </div>
+          </div>
+
+          <div id="status" class="mb-3 text-muted">Listo</div>
+
+          <div id="resultCard" class="d-none">
+            <h5>Resultados</h5>
+            <pre id="resultPre" class="small bg-light p-3 rounded"></pre>
+            <a id="downloadLink" class="btn btn-success mt-2" href="#" download>Descargar resultados</a>
+          </div>
+        </div>
+      </div>
+
+      <footer class="mt-4 text-muted small">Nota: El rastreo puede tardar varios minutos según la profundidad y el sitio.</footer>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
