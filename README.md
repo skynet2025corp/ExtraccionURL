@@ -9,6 +9,17 @@ python -m venv .venv
 source .venv/bin/activate   # or .venv\Scripts\activate on Windows
 pip install -r requirements.txt
 gunicorn app:app
+# URL Extractor — API for Render
+
+This repository originally contained a CLI and a Tkinter GUI. I added a minimal Flask API to allow deployment on Render.
+
+Quick start (locally):
+
+```bash
+python -m venv .venv
+source .venv/bin/activate   # or .venv\Scripts\activate on Windows
+pip install -r requirements.txt
+gunicorn app:app
 ```
 
 API:

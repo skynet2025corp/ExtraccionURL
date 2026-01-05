@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+.Python
+node_modules/
+.DS_Store
+urls_*.txt
+urls_administrativas_*.txt
